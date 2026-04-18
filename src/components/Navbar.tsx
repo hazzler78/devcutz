@@ -54,8 +54,8 @@ export function Navbar() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
-            Boka via DM
+          <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+            {site.bookNoiz.ctaShort}
           </Button>
         </div>
 
@@ -87,13 +87,13 @@ export function Navbar() {
               </a>
             ))}
             <Button
-              href={site.instagram.url}
+              href={site.bookNoiz.url}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Boka via DM
+              {site.bookNoiz.ctaShort}
             </Button>
           </div>
         </div>

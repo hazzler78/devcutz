@@ -33,13 +33,13 @@ export function InstagramFeed() {
               {site.gallery.title}
             </h2>
             <p className="mt-3 max-w-2xl text-base text-white/65">{site.gallery.intro}</p>
-            <p className="mt-2 text-sm text-white/45">
-              Senaste från @{ig.handle} kan visas automatiskt här via en widget – så slipper du ladda upp
-              varje bild manuellt på hemsidan.
-            </p>
+            <p className="mt-2 text-sm text-white/45">{site.gallery.widgetHint}</p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Button href={ig.url} target="_blank" rel="noopener noreferrer">
+            <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+              {site.bookNoiz.ctaShort}
+            </Button>
+            <Button href={ig.url} target="_blank" rel="noopener noreferrer" variant="ghost">
               Öppna Instagram
             </Button>
             <Button href={site.tiktok.url} target="_blank" rel="noopener noreferrer" variant="ghost">

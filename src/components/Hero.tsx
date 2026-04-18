@@ -34,8 +34,8 @@ export function Hero() {
         </p>
 
         <div className="mt-8 flex max-w-xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-          <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
-            {site.hero.ctaDm}
+          <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+            {site.bookNoiz.cta}
           </Button>
           <Button href="#galleri" variant="ghost">
             {site.hero.ctaGallery}
@@ -45,18 +45,7 @@ export function Hero() {
           </Button>
         </div>
 
-        <p className="mt-6 max-w-xl text-sm text-white/55">
-          DM på{" "}
-          <a
-            href={site.instagram.url}
-            className="text-accent underline-offset-4 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @{site.instagram.handle}
-          </a>{" "}
-          – där fixar vi tid och vibe. Telefon går också, men DM är snabbast.
-        </p>
+        <p className="mt-6 max-w-xl text-sm text-white/55">{site.bookNoiz.heroNote}</p>
       </div>
     </section>
   );

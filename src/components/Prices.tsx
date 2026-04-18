@@ -13,7 +13,7 @@ export function Prices() {
             {site.prices.title}
           </h2>
           <p className="mt-3 text-base text-white/65">
-            Enkla priser för klippning Arvika, herrfrisör och skäggtrim. Inga gömda grejer.
+            Enkla priser för klippning Arvika, herrfrisör och skäggtrim. Inga gömda grejer. Tider bokar du via Noiz.
           </p>
         </div>
 
@@ -30,8 +30,8 @@ export function Prices() {
         </ul>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
-          <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
-            Boka via DM – säg vad du vill ha
+          <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+            {site.bookNoiz.cta}
           </Button>
           <Button href="#boka" variant="outline">
             Läs om bokning

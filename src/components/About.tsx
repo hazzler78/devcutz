@@ -20,10 +20,13 @@ export function About() {
               {site.about.body}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
-                DM:a mig på @{site.instagram.handle}
+              <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+                {site.bookNoiz.cta}
               </Button>
-              <Button href="#priser" variant="ghost">
+              <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer" variant="ghost">
+                Följ @{site.instagram.handle}
+              </Button>
+              <Button href="#priser" variant="outline">
                 Se priser
               </Button>
             </div>

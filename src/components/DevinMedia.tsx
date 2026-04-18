@@ -24,10 +24,13 @@ export function DevinMedia() {
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
+            <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+              {site.bookNoiz.ctaShort}
+            </Button>
             <Button href={site.tiktok.url} target="_blank" rel="noopener noreferrer" variant="ghost">
               Mer på TikTok
             </Button>
-            <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
+            <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer" variant="ghost">
               Följ på Instagram
             </Button>
           </div>

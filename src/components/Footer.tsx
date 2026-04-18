@@ -23,13 +23,16 @@ export function Footer() {
             >
               {site.workplace.name}
             </a>{" "}
-            i {site.workplace.city}. Taper fade, herrfrisör, barnklippning och skäggtrim.
+            i {site.workplace.city}. Taper fade, herrfrisör, barnklippning och skäggtrim. Boka via Noiz.
           </p>
         </div>
 
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-          <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
-            Följ & boka på @{site.instagram.handle}
+          <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+            {site.bookNoiz.ctaShort}
+          </Button>
+          <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer" variant="ghost">
+            Följ @{site.instagram.handle}
           </Button>
           <Button href={site.tiktok.url} target="_blank" rel="noopener noreferrer" variant="ghost">
             TikTok @{site.tiktok.handle}
@@ -45,6 +48,9 @@ export function Footer() {
           <Link href="#top" className="hover:text-white">
             Till toppen
           </Link>
+          <a href={site.bookNoiz.url} className="hover:text-white" target="_blank" rel="noreferrer">
+            Boka Noiz
+          </a>
           <a href={site.instagram.url} className="hover:text-white" target="_blank" rel="noreferrer">
             Instagram
           </a>

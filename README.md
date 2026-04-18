@@ -1,6 +1,6 @@
 # devcutz.se – Devins landningssida
 
-Modern **Next.js 15 (App Router)**-sida med **Tailwind CSS v4** och **TypeScript**. En scroll-vänlig startsida optimerad för **lokal SEO i Arvika** och **bokning via Instagram DM**.
+Modern **Next.js 15 (App Router)**-sida med **Tailwind CSS v4** och **TypeScript**. En scroll-vänlig startsida optimerad för **lokal SEO i Arvika**; **bokning sker via Noiz** (onlinebokning). Instagram används som portfolio/inspo.
 
 ## Kom igång lokalt
 
@@ -34,6 +34,7 @@ Efter deploy: uppdatera `site.url` i `src/config/site.ts` till `https://devcutz.
 Allt “innehåll” samlas i **`src/config/site.ts`**:
 
 - Rubriker, bio, öppettider, telefon, länkar till Instagram/TikTok och **Noiz** (`noiz.se`, Magasinsgatan 7).
+- **Bokningslänk:** `bookNoiz.url` (Voady) – uppdatera om Noiz byter bokningssystem.
 - **Priser** – arrayen `prices.items`.
 - **Hero-bild** – fältet `hero.imageSrc` (standard: **`/devin-hero.jpeg`** i `public/`).
 - **Bilder & filmer** – sektionen styrs av `media.photos` och `media.clips` (sökvägar till filer i `public/`).

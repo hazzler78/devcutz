@@ -39,20 +39,13 @@ export const metadata: Metadata = {
     siteName: site.brand,
     title: site.title,
     description: site.description,
-    images: [
-      {
-        url: site.hero.imageSrc,
-        width: 1200,
-        height: 630,
-        alt: site.hero.imageAlt,
-      },
-    ],
+    /** Delningsbild: `opengraph-image.tsx` (next/og) – inte hero-fotot. */
   },
   twitter: {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
-    images: [site.hero.imageSrc],
+    /** Delningsbild: `twitter-image.tsx` */
   },
   alternates: {
     canonical: site.url,

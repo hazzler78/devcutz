@@ -46,16 +46,25 @@ export function Contact() {
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white/45">
-                Kontakt
+                Bokning & kontakt
               </h3>
-              <p className="mt-3 text-lg text-white">{site.contact.dmLine}</p>
-              <p className="mt-2 text-sm text-white/55">{site.contact.phoneNote}</p>
+              <p className="mt-3 text-lg font-semibold text-white">{site.contact.bookLead}</p>
+              <p className="mt-2 text-sm text-white/55">{site.contact.instagramLine}</p>
+              <p className="mt-2 text-sm text-white/55">
+                {site.contact.phoneNote}{" "}
+                <a className="text-white hover:underline" href={`tel:${site.workplace.salonPhoneTel}`}>
+                  {site.workplace.salonPhoneDisplay}
+                </a>
+              </p>
               <div className="mt-5 flex flex-wrap gap-3">
-                <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer">
-                  Instagram DM
+                <Button href={site.bookNoiz.url} target="_blank" rel="noopener noreferrer">
+                  {site.bookNoiz.cta}
                 </Button>
-                <Button href={`tel:${site.phoneTel}`} variant="ghost">
-                  Ring {site.phone}
+                <Button href={site.instagram.url} target="_blank" rel="noopener noreferrer" variant="ghost">
+                  Instagram @{site.instagram.handle}
+                </Button>
+                <Button href={`tel:${site.phoneTel}`} variant="outline">
+                  Ring Devin {site.phone}
                 </Button>
               </div>
             </div>
@@ -72,10 +81,7 @@ export function Contact() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-white/45">
-                Tiderna gäller när jag är på plats som lärling – dubbellkolla gärna i DM om du är
-                osäker.
-              </p>
+              <p className="mt-4 text-xs text-white/45">{site.contact.hoursNote}</p>
             </div>
           </div>
 

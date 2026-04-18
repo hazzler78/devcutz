@@ -14,18 +14,27 @@ export const site = {
   title: "Devcutz | Devin Söderberg – frisör, taper fade & klippning i Arvika",
 
   description:
-    "Fresh taper fades i Arvika med Devin Söderberg (18), lärling på Noiz Barbershop på Magasinsgatan 7. Herrfrisör, barnklippning, skäggtrim – boka via Instagram DM @devvcuts.",
+    "Fresh taper fades i Arvika med Devin Söderberg (18), lärling på Noiz Barbershop på Magasinsgatan 7. Herrfrisör, barnklippning, skäggtrim – boka tid via Noiz onlinebokning.",
 
-  /** Instagram – huvud-CTA */
+  /**
+   * All bokning av tid sker via Noiz (salongens system).
+   * Uppdatera URL om Noiz byter bokningsleverantör.
+   */
+  bookNoiz: {
+    url: "https://bokning.voady.se/noiz/noiz/",
+    cta: "Boka tid på Noiz",
+    ctaShort: "Boka på Noiz",
+    /** Rad under CTA:s i hero */
+    heroNote:
+      "Tider bokar du alltid via Noiz. På Instagram (@devvcuts) kan du kika inspo och se grejer jag kör – men boka via länken ovan.",
+  },
+
+  /** Instagram – portfolio / följ (inte primär bokning). */
   instagram: {
     handle: "devvcuts",
     url: "https://www.instagram.com/devvcuts/",
   },
 
-  /**
-   * TikTok – uppdatera till rätt @ om den skiljer sig från Instagram.
-   * Mest innehåll här, men bokning sker via IG enligt brief.
-   */
   tiktok: {
     handle: "devvcuts",
     url: "https://www.tiktok.com/@devvcuts",
@@ -68,7 +77,6 @@ export const site = {
     headline: "Fresh taper fades med Devin i Arvika",
     sub:
       "18-årig lärling på Noiz Barbershop • Taper fades, nice finish och puts på toppen",
-    ctaDm: "Boka via DM nu",
     ctaGallery: "Se mina klippningar",
     ctaPrices: "Kolla priserna",
     /** Lokal fil i `public/` – byt bild genom att ersätta filen med samma namn. */
@@ -80,7 +88,7 @@ export const site = {
   about: {
     title: "Yo, jag är Devin",
     body:
-      "Hej! Jag är Devin Söderberg, 18 år och lärling på Noiz i Arvika. Jag kör mest taper fades med snygg finish och puts på toppen. Vill du ha en fresh look som passar just dig? DM mig på Instagram så fixar vi det.",
+      "Hej! Jag är Devin Söderberg, 18 år och lärling på Noiz i Arvika. Jag kör mest taper fades med snygg finish och puts på toppen. Vill du ha en fresh look? Boka tid via Noiz – där ser du när jag är på plats. Kika gärna in på Instagram om du vill ha inspo innan du kommer.",
   },
 
   /** Egna foton (utöver hero) – lägg fler i `public/` och lista här. */
@@ -114,9 +122,10 @@ export const site = {
    */
   gallery: {
     title: "Mina senaste klippningar @devvcuts",
-    /** Kort beskrivning under rubriken (SEO + tydlighet). */
     intro:
-      "Här syns grejer jag kört nyligen. Vill du se mer – scrolla flödet eller hoppa in på Instagram.",
+      "Här syns grejer jag kört nyligen. Bokning sker via Noiz – Instagram är mest för inspo och flöde.",
+    widgetHint:
+      "Widget nedan uppdaterar sig automatiskt när du kopplat den (se README) – slipper ladda upp varje bild på hemsidan.",
   },
 
   prices: {
@@ -139,15 +148,27 @@ export const site = {
   },
 
   booking: {
-    title: "Boka tid – inga krångliga formulär",
+    title: "Boka tid – via Noiz",
     body:
-      "Skippa telefonköer och mejl. Skriv bara i mina Instagram-DM:s så svarar jag så fort jag kan. Där kan du skicka inspo-bilder och säga hur du vill ha det.",
-    cta: "Skriv till mig på Instagram DM",
+      "Alla tider går via Noiz officiella onlinebokning. Där ser du när jag är på plats som lärling och kan välja tid som passar dig – samma regler och avbokning som för resten av salongen.",
+    supportBody:
+      "Vill du skicka inspo-bilder eller fråga något snabbt? DM på Instagram funkar – men sitta i stolen bokar du alltid genom Noiz.",
+    cta: "Öppna Noiz onlinebokning",
+    points: [
+      "Lediga tider i realtid – inga dubbelbokningar.",
+      "Tydliga regler för avbokning (läs på noiz.se om du är osäker).",
+      "Tryggt för både dig och teamet på golvet.",
+    ],
+    sideTitle: "Varför via Noiz?",
+    phoneNote: "Min mobil nedan är extra om något strular – bokning sker inte via DM.",
   },
 
   contact: {
     title: "Kontakt & hitta hit",
-    dmLine: "Bäst kontakt: Instagram DM @devvcuts",
-    phoneNote: "Telefon funkar också, men DM är snabbast.",
+    bookLead: "Boka tid via Noiz onlinebokning",
+    instagramLine: "Instagram är för inspo och uppdateringar – inte för att boka tid.",
+    phoneNote: "Noiz växel om du har frågor om salongen:",
+    hoursNote:
+      "Tiderna nedan är när jag brukar vara på plats som lärling – dubbellkolla alltid i bokningssystemet när du bokar.",
   },
 } as const;
