@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  /** Hero/galleri använder lokala filer i `public/`. Lägg till `remotePatterns` om du byter till extern bild-URL. */
 };
 
 export default nextConfig;
